@@ -9,7 +9,7 @@
     "shadow-cljs": "2.16.2"
   },
   "logseq": {
-    "id": "_byud67luv"
+    "id": "_gardening1"
   },
   "scripts": {
     "watch": "npx shadow-cljs watch app",
