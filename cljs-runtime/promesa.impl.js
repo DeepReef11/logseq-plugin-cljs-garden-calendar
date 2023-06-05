@@ -77,61 +77,61 @@ return p__$1;
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_fmap$arity$2 = (function (it,f){
 var it__$1 = this;
-return it__$1.fmap((function (p1__30903_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30903_SHARP_) : f.call(null,p1__30903_SHARP_));
+return it__$1.fmap((function (p1__34843_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34843_SHARP_) : f.call(null,p1__34843_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_fmap$arity$3 = (function (it,f,e){
 var it__$1 = this;
-return it__$1.fmap((function (p1__30904_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30904_SHARP_) : f.call(null,p1__30904_SHARP_));
+return it__$1.fmap((function (p1__34844_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34844_SHARP_) : f.call(null,p1__34844_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_mcat$arity$2 = (function (it,f){
 var it__$1 = this;
-return it__$1.fbind((function (p1__30905_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30905_SHARP_) : f.call(null,p1__30905_SHARP_));
+return it__$1.fbind((function (p1__34848_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34848_SHARP_) : f.call(null,p1__34848_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_mcat$arity$3 = (function (it,f,executor){
 var it__$1 = this;
-return it__$1.fbind((function (p1__30906_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30906_SHARP_) : f.call(null,p1__30906_SHARP_));
+return it__$1.fbind((function (p1__34849_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34849_SHARP_) : f.call(null,p1__34849_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_hmap$arity$2 = (function (it,f){
 var it__$1 = this;
-return it__$1.fmap((function (p1__30907_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(p1__30907_SHARP_,null) : f.call(null,p1__30907_SHARP_,null));
-}),(function (p1__30908_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(null,p1__30908_SHARP_) : f.call(null,null,p1__30908_SHARP_));
+return it__$1.fmap((function (p1__34850_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(p1__34850_SHARP_,null) : f.call(null,p1__34850_SHARP_,null));
+}),(function (p1__34851_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(null,p1__34851_SHARP_) : f.call(null,null,p1__34851_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_hmap$arity$3 = (function (it,f,e){
 var it__$1 = this;
-return it__$1.fmap((function (p1__30909_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(p1__30909_SHARP_,null) : f.call(null,p1__30909_SHARP_,null));
-}),(function (p1__30910_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(null,p1__30910_SHARP_) : f.call(null,null,p1__30910_SHARP_));
+return it__$1.fmap((function (p1__34852_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(p1__34852_SHARP_,null) : f.call(null,p1__34852_SHARP_,null));
+}),(function (p1__34853_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$2 ? f.cljs$core$IFn$_invoke$arity$2(null,p1__34853_SHARP_) : f.call(null,null,p1__34853_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_merr$arity$2 = (function (it,f){
 var it__$1 = this;
-return it__$1.fbind(promesa.protocols._promise,(function (p1__30911_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30911_SHARP_) : f.call(null,p1__30911_SHARP_));
+return it__$1.fbind(promesa.protocols._promise,(function (p1__34854_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34854_SHARP_) : f.call(null,p1__34854_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_merr$arity$3 = (function (it,f,e){
 var it__$1 = this;
-return it__$1.fbind(promesa.protocols._promise,(function (p1__30912_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30912_SHARP_) : f.call(null,p1__30912_SHARP_));
+return it__$1.fbind(promesa.protocols._promise,(function (p1__34855_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34855_SHARP_) : f.call(null,p1__34855_SHARP_));
 }));
 }));
 
@@ -151,15 +151,15 @@ return it__$1;
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_then$arity$2 = (function (it,f){
 var it__$1 = this;
-return it__$1.then((function (p1__30913_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30913_SHARP_) : f.call(null,p1__30913_SHARP_));
+return it__$1.then((function (p1__34860_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34860_SHARP_) : f.call(null,p1__34860_SHARP_));
 }));
 }));
 
 (promesa.impl.promise.PromiseImpl.prototype.promesa$protocols$IPromise$_then$arity$3 = (function (it,f,executor){
 var it__$1 = this;
-return it__$1.then((function (p1__30914_SHARP_){
-return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__30914_SHARP_) : f.call(null,p1__30914_SHARP_));
+return it__$1.then((function (p1__34862_SHARP_){
+return (f.cljs$core$IFn$_invoke$arity$1 ? f.cljs$core$IFn$_invoke$arity$1(p1__34862_SHARP_) : f.call(null,p1__34862_SHARP_));
 }));
 }));
 
@@ -230,8 +230,8 @@ var it__$1 = this;
 return it__$1.isPending();
 }));
 promesa.impl.unwrap = (function promesa$impl$unwrap(var_args){
-var G__30916 = arguments.length;
-switch (G__30916) {
+var G__34917 = arguments.length;
+switch (G__34917) {
 case 1:
 return promesa.impl.unwrap.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 

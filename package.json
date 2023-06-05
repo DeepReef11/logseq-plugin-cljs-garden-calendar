@@ -1,5 +1,5 @@
 {
-  "name": "logseq-cljs-playground",
+  "name": "logseq-gardening-tool",
   "version": "0.0.1",
   "private": true,
   "main": "index.html",
@@ -9,7 +9,7 @@
     "shadow-cljs": "2.16.2"
   },
   "logseq": {
-    "id": "_gardening1"
+    "id": "gardening-tool"
   },
   "scripts": {
     "watch": "npx shadow-cljs watch app",
