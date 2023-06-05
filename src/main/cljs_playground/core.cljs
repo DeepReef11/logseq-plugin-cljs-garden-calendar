@@ -3,18 +3,16 @@
  ;; [cljs-http.client :as http]
  ;; [cljs-http.client :as http]
  ;; [datascript.core :as d]
-           
-            [promesa.core :as p] 
-))
+
+            [promesa.core :as p]))
 
 ;; (future (Thread/sleep 4000)
         ;; (println "I'll print after 4 seconds"))
 
-
 ;; (defn create-garden-calendar []
 ;;   (p/let [current-block (js/logseq.Editor.getCurrentBlock)]
 ;;   )
-  
+
 ;;   )
 ;; (def x (create-garden-calendar))
 
@@ -28,19 +26,13 @@
 ;;   (regSlashCmd
 ;;    "create-garden-calendar"
 ;;    #(println "ok3")))
-  
 
-   (js/logseq.App.showMsg "Gardening rocks!")
+(js/logseq.App.showMsg "Gardening rocks!")
 
 (defn main []
   (js/logseq.App.showMsg "Gardening rocks!")
   ;; (slashcommands)
-  )  
-(js/logseq.App.showMsg "Gardening rocks!")
-(println (+ 1 1))
+  )
 (defn init []
   (-> (js/logseq.ready main)
       (.catch js/console.error)))
-
-
-
