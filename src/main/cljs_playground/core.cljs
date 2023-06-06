@@ -8,6 +8,7 @@
             [promesa.core :as p]
             [oops.core :refer [oget oset! ocall oapply ocall! oapply!
                                oget+ oset!+ ocall+ oapply+ ocall!+ oapply!+]]))
+
 (defn simple-component []
   [:div
    [:p "I am a component!"]
@@ -15,23 +16,39 @@
     "I have " [:strong "bold"]
     [:span {:style {:color "red"}} " and red "] "text."]])
 
-(defn calendar-bar []
+(def pxMult 12)
 
-  )
+(defn calendar-bar [lenght]
+  (do
+    
+  (def width (* lenght pxMult))
+  (str "
+      <div class=\"bar\" style=\"width:" width "px;\" >" 
+  " "
+  "</div>")))
 
+
+(defn  calendar-style []
+  (str "<style>
+  .bar {
+      background-color: blue;
+  }
+</style>
+  "))
 
 (defn create-garden-calendar []
   (-> (js/logseq.Editor.getCurrentBlock)
       (.then #(do
-                (js/console.log "2")
+                (js/console.log "3")
 
                 (def result %)
 
                 (js/console.log result)
-                (js/console.log (simple-component))
+                ; (js/console.log (simple-component))
                 (def block-uuid (oget result "uuid"))
-                (-> (js/logseq.Editor.updateBlock block-uuid (simple-component)))
-                ))))
+                (def content (str "<body><div>" (calendar-bar 2) (calendar-bar 3) (calendar-style) "</div></body>"))
+                (-> (js/logseq.Editor.updateBlock block-uuid content))
+             ))))
 
 (defn slashcommands []
   (def regSlashCmd js/logseq.Editor.registerSlashCommand)
