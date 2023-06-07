@@ -77,8 +77,8 @@ return cljs.core.native_satisfies_QMARK_(promesa.protocols.IExecutor,o);
 }
 });
 promesa.exec.resolve_executor = (function promesa$exec$resolve_executor(var_args){
-var G__41669 = arguments.length;
-switch (G__41669) {
+var G__40034 = arguments.length;
+switch (G__40034) {
 case 0:
 return promesa.exec.resolve_executor.cljs$core$IFn$_invoke$arity$0();
 
@@ -107,9 +107,9 @@ return executor;
 if(cljs.core.delay_QMARK_(executor)){
 return promesa.exec.resolve_executor.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(executor));
 } else {
-var G__41674 = executor;
-var G__41674__$1 = (((G__41674 instanceof cljs.core.Keyword))?G__41674.fqn:null);
-switch (G__41674__$1) {
+var G__40047 = executor;
+var G__40047__$1 = (((G__40047 instanceof cljs.core.Keyword))?G__40047.fqn:null);
+switch (G__40047__$1) {
 case "default":
 return cljs.core.deref(promesa.exec.default_executor);
 
@@ -147,8 +147,8 @@ throw (new TypeError("invalid executor"));
 (promesa.exec.resolve_executor.cljs$lang$maxFixedArity = 1);
 
 promesa.exec.resolve_scheduler = (function promesa$exec$resolve_scheduler(var_args){
-var G__41681 = arguments.length;
-switch (G__41681) {
+var G__40059 = arguments.length;
+switch (G__40059) {
 case 0:
 return promesa.exec.resolve_scheduler.cljs$core$IFn$_invoke$arity$0();
 
@@ -185,8 +185,8 @@ return f;
  *   the `(.execute executor f)`. Fire and forget.
  */
 promesa.exec.exec_BANG_ = (function promesa$exec$exec_BANG_(var_args){
-var G__41691 = arguments.length;
-switch (G__41691) {
+var G__40083 = arguments.length;
+switch (G__40083) {
 case 1:
 return promesa.exec.exec_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -215,8 +215,8 @@ return promesa.protocols._exec_BANG_(promesa.exec.resolve_executor.cljs$core$IFn
  * Run the task in the provided executor.
  */
 promesa.exec.run_BANG_ = (function promesa$exec$run_BANG_(var_args){
-var G__41698 = arguments.length;
-switch (G__41698) {
+var G__40102 = arguments.length;
+switch (G__40102) {
 case 1:
 return promesa.exec.run_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -249,8 +249,8 @@ return promesa.protocols._run_BANG_(promesa.exec.resolve_executor.cljs$core$IFn$
  *   A task is a plain clojure function.
  */
 promesa.exec.submit_BANG_ = (function promesa$exec$submit_BANG_(var_args){
-var G__41703 = arguments.length;
-switch (G__41703) {
+var G__40111 = arguments.length;
+switch (G__40111) {
 case 1:
 return promesa.exec.submit_BANG_.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -283,8 +283,8 @@ return promesa.protocols._submit_BANG_(promesa.exec.resolve_executor.cljs$core$I
  *   it uses the `setTimeout` function.
  */
 promesa.exec.schedule_BANG_ = (function promesa$exec$schedule_BANG_(var_args){
-var G__41706 = arguments.length;
-switch (G__41706) {
+var G__40121 = arguments.length;
+switch (G__40121) {
 case 2:
 return promesa.exec.schedule_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -313,7 +313,7 @@ return promesa.protocols._schedule_BANG_(promesa.exec.resolve_scheduler.cljs$cor
  * Creates an executor instance that run tasks in the same thread.
  */
 promesa.exec.current_thread_executor = (function promesa$exec$current_thread_executor(){
-if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && (typeof promesa.exec.t_promesa$exec41707 !== 'undefined')){
+if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && (typeof promesa.exec.t_promesa$exec40141 !== 'undefined')){
 } else {
 
 /**
@@ -322,79 +322,79 @@ if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && 
  * @implements {cljs.core.IMeta}
  * @implements {cljs.core.IWithMeta}
 */
-promesa.exec.t_promesa$exec41707 = (function (meta41708){
-this.meta41708 = meta41708;
+promesa.exec.t_promesa$exec40141 = (function (meta40142){
+this.meta40142 = meta40142;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 });
-(promesa.exec.t_promesa$exec41707.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_41709,meta41708__$1){
+(promesa.exec.t_promesa$exec40141.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_40143,meta40142__$1){
 var self__ = this;
-var _41709__$1 = this;
-return (new promesa.exec.t_promesa$exec41707(meta41708__$1));
+var _40143__$1 = this;
+return (new promesa.exec.t_promesa$exec40141(meta40142__$1));
 }));
 
-(promesa.exec.t_promesa$exec41707.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_41709){
+(promesa.exec.t_promesa$exec40141.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_40143){
 var self__ = this;
-var _41709__$1 = this;
-return self__.meta41708;
+var _40143__$1 = this;
+return self__.meta40142;
 }));
 
-(promesa.exec.t_promesa$exec41707.prototype.promesa$protocols$IExecutor$ = cljs.core.PROTOCOL_SENTINEL);
+(promesa.exec.t_promesa$exec40141.prototype.promesa$protocols$IExecutor$ = cljs.core.PROTOCOL_SENTINEL);
 
-(promesa.exec.t_promesa$exec41707.prototype.promesa$protocols$IExecutor$_exec_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40141.prototype.promesa$protocols$IExecutor$_exec_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 try{(f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.call(null));
 
 return null;
-}catch (e41710){var _ = e41710;
+}catch (e40156){var _ = e40156;
 return null;
 }}));
 
-(promesa.exec.t_promesa$exec41707.prototype.promesa$protocols$IExecutor$_run_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40141.prototype.promesa$protocols$IExecutor$_run_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 try{return promesa.protocols._promise(cljs.core.comp.cljs$core$IFn$_invoke$arity$2(promesa.exec.noop,f));
-}catch (e41711){var cause = e41711;
+}catch (e40158){var cause = e40158;
 return promesa.protocols._promise(cause);
 }}));
 
-(promesa.exec.t_promesa$exec41707.prototype.promesa$protocols$IExecutor$_submit_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40141.prototype.promesa$protocols$IExecutor$_submit_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 try{return promesa.protocols._promise((f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.call(null)));
-}catch (e41712){var cause = e41712;
+}catch (e40169){var cause = e40169;
 return promesa.protocols._promise(cause);
 }}));
 
-(promesa.exec.t_promesa$exec41707.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta41708","meta41708",1722267304,null)], null);
+(promesa.exec.t_promesa$exec40141.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta40142","meta40142",-151025989,null)], null);
 }));
 
-(promesa.exec.t_promesa$exec41707.cljs$lang$type = true);
+(promesa.exec.t_promesa$exec40141.cljs$lang$type = true);
 
-(promesa.exec.t_promesa$exec41707.cljs$lang$ctorStr = "promesa.exec/t_promesa$exec41707");
+(promesa.exec.t_promesa$exec40141.cljs$lang$ctorStr = "promesa.exec/t_promesa$exec40141");
 
-(promesa.exec.t_promesa$exec41707.cljs$lang$ctorPrWriter = (function (this__4491__auto__,writer__4492__auto__,opt__4493__auto__){
-return cljs.core._write(writer__4492__auto__,"promesa.exec/t_promesa$exec41707");
+(promesa.exec.t_promesa$exec40141.cljs$lang$ctorPrWriter = (function (this__4491__auto__,writer__4492__auto__,opt__4493__auto__){
+return cljs.core._write(writer__4492__auto__,"promesa.exec/t_promesa$exec40141");
 }));
 
 /**
- * Positional factory function for promesa.exec/t_promesa$exec41707.
+ * Positional factory function for promesa.exec/t_promesa$exec40141.
  */
-promesa.exec.__GT_t_promesa$exec41707 = (function promesa$exec$current_thread_executor_$___GT_t_promesa$exec41707(meta41708){
-return (new promesa.exec.t_promesa$exec41707(meta41708));
+promesa.exec.__GT_t_promesa$exec40141 = (function promesa$exec$current_thread_executor_$___GT_t_promesa$exec40141(meta40142){
+return (new promesa.exec.t_promesa$exec40141(meta40142));
 });
 
 }
 
-return (new promesa.exec.t_promesa$exec41707(cljs.core.PersistentArrayMap.EMPTY));
+return (new promesa.exec.t_promesa$exec40141(cljs.core.PersistentArrayMap.EMPTY));
 });
 /**
  * An IExecutor that schedules tasks to be executed in the MicrotasksQueue.
  */
 promesa.exec.microtask_executor = (function promesa$exec$microtask_executor(){
-if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && (typeof promesa.exec.t_promesa$exec41719 !== 'undefined')){
+if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && (typeof promesa.exec.t_promesa$exec40184 !== 'undefined')){
 } else {
 
 /**
@@ -403,42 +403,42 @@ if((typeof promesa !== 'undefined') && (typeof promesa.exec !== 'undefined') && 
  * @implements {cljs.core.IMeta}
  * @implements {cljs.core.IWithMeta}
 */
-promesa.exec.t_promesa$exec41719 = (function (meta41720){
-this.meta41720 = meta41720;
+promesa.exec.t_promesa$exec40184 = (function (meta40185){
+this.meta40185 = meta40185;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 });
-(promesa.exec.t_promesa$exec41719.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_41721,meta41720__$1){
+(promesa.exec.t_promesa$exec40184.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_40186,meta40185__$1){
 var self__ = this;
-var _41721__$1 = this;
-return (new promesa.exec.t_promesa$exec41719(meta41720__$1));
+var _40186__$1 = this;
+return (new promesa.exec.t_promesa$exec40184(meta40185__$1));
 }));
 
-(promesa.exec.t_promesa$exec41719.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_41721){
+(promesa.exec.t_promesa$exec40184.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_40186){
 var self__ = this;
-var _41721__$1 = this;
-return self__.meta41720;
+var _40186__$1 = this;
+return self__.meta40185;
 }));
 
-(promesa.exec.t_promesa$exec41719.prototype.promesa$protocols$IExecutor$ = cljs.core.PROTOCOL_SENTINEL);
+(promesa.exec.t_promesa$exec40184.prototype.promesa$protocols$IExecutor$ = cljs.core.PROTOCOL_SENTINEL);
 
-(promesa.exec.t_promesa$exec41719.prototype.promesa$protocols$IExecutor$_exec_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40184.prototype.promesa$protocols$IExecutor$_exec_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 return promesa.impl.promise.nextTick(f);
 }));
 
-(promesa.exec.t_promesa$exec41719.prototype.promesa$protocols$IExecutor$_run_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40184.prototype.promesa$protocols$IExecutor$_run_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 return promesa.protocols._fmap(promesa.protocols._fmap(promesa.protocols._promise(null),(function (_){
 try{return (f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.call(null));
-}catch (e41727){var ___$1 = e41727;
+}catch (e40195){var ___$1 = e40195;
 return null;
 }})),promesa.exec.noop);
 }));
 
-(promesa.exec.t_promesa$exec41719.prototype.promesa$protocols$IExecutor$_submit_BANG_$arity$2 = (function (this$,f){
+(promesa.exec.t_promesa$exec40184.prototype.promesa$protocols$IExecutor$_submit_BANG_$arity$2 = (function (this$,f){
 var self__ = this;
 var this$__$1 = this;
 return promesa.protocols._fmap(promesa.protocols._promise(null),(function (_){
@@ -446,28 +446,28 @@ return (f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.
 }));
 }));
 
-(promesa.exec.t_promesa$exec41719.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta41720","meta41720",-338949751,null)], null);
+(promesa.exec.t_promesa$exec40184.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta40185","meta40185",-329619351,null)], null);
 }));
 
-(promesa.exec.t_promesa$exec41719.cljs$lang$type = true);
+(promesa.exec.t_promesa$exec40184.cljs$lang$type = true);
 
-(promesa.exec.t_promesa$exec41719.cljs$lang$ctorStr = "promesa.exec/t_promesa$exec41719");
+(promesa.exec.t_promesa$exec40184.cljs$lang$ctorStr = "promesa.exec/t_promesa$exec40184");
 
-(promesa.exec.t_promesa$exec41719.cljs$lang$ctorPrWriter = (function (this__4491__auto__,writer__4492__auto__,opt__4493__auto__){
-return cljs.core._write(writer__4492__auto__,"promesa.exec/t_promesa$exec41719");
+(promesa.exec.t_promesa$exec40184.cljs$lang$ctorPrWriter = (function (this__4491__auto__,writer__4492__auto__,opt__4493__auto__){
+return cljs.core._write(writer__4492__auto__,"promesa.exec/t_promesa$exec40184");
 }));
 
 /**
- * Positional factory function for promesa.exec/t_promesa$exec41719.
+ * Positional factory function for promesa.exec/t_promesa$exec40184.
  */
-promesa.exec.__GT_t_promesa$exec41719 = (function promesa$exec$microtask_executor_$___GT_t_promesa$exec41719(meta41720){
-return (new promesa.exec.t_promesa$exec41719(meta41720));
+promesa.exec.__GT_t_promesa$exec40184 = (function promesa$exec$microtask_executor_$___GT_t_promesa$exec40184(meta40185){
+return (new promesa.exec.t_promesa$exec40184(meta40185));
 });
 
 }
 
-return (new promesa.exec.t_promesa$exec41719(cljs.core.PersistentArrayMap.EMPTY));
+return (new promesa.exec.t_promesa$exec40184(cljs.core.PersistentArrayMap.EMPTY));
 });
 
 /**
@@ -484,7 +484,7 @@ var ___$1 = this;
 var df = promesa.impl.promise.deferred();
 var tid = setTimeout((function (){
 try{return promesa.protocols._resolve_BANG_(df,(f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.call(null)));
-}catch (e41728){var cause = e41728;
+}catch (e40219){var cause = e40219;
 return promesa.protocols._reject_BANG_(df,cause);
 }}),ms);
 promesa.protocols._fnly(df,(function (___$2,c){
@@ -523,14 +523,14 @@ return (new promesa.exec.Scheduler());
  */
 promesa.exec.scheduled_executor = (function promesa$exec$scheduled_executor(var_args){
 var args__4870__auto__ = [];
-var len__4864__auto___41769 = arguments.length;
-var i__4865__auto___41771 = (0);
+var len__4864__auto___40427 = arguments.length;
+var i__4865__auto___40428 = (0);
 while(true){
-if((i__4865__auto___41771 < len__4864__auto___41769)){
-args__4870__auto__.push((arguments[i__4865__auto___41771]));
+if((i__4865__auto___40428 < len__4864__auto___40427)){
+args__4870__auto__.push((arguments[i__4865__auto___40428]));
 
-var G__41774 = (i__4865__auto___41771 + (1));
-i__4865__auto___41771 = G__41774;
+var G__40433 = (i__4865__auto___40428 + (1));
+i__4865__auto___40428 = G__40433;
 continue;
 } else {
 }
@@ -541,20 +541,20 @@ var argseq__4871__auto__ = ((((0) < args__4870__auto__.length))?(new cljs.core.I
 return promesa.exec.scheduled_executor.cljs$core$IFn$_invoke$arity$variadic(argseq__4871__auto__);
 });
 
-(promesa.exec.scheduled_executor.cljs$core$IFn$_invoke$arity$variadic = (function (p__41734){
-var map__41735 = p__41734;
-var map__41735__$1 = cljs.core.__destructure_map(map__41735);
-var parallelism = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__41735__$1,new cljs.core.Keyword(null,"parallelism","parallelism",-930922333),(1));
-var factory = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__41735__$1,new cljs.core.Keyword(null,"factory","factory",63933746));
+(promesa.exec.scheduled_executor.cljs$core$IFn$_invoke$arity$variadic = (function (p__40253){
+var map__40255 = p__40253;
+var map__40255__$1 = cljs.core.__destructure_map(map__40255);
+var parallelism = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__40255__$1,new cljs.core.Keyword(null,"parallelism","parallelism",-930922333),(1));
+var factory = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40255__$1,new cljs.core.Keyword(null,"factory","factory",63933746));
 return promesa.exec.__GT_Scheduler();
 }));
 
 (promesa.exec.scheduled_executor.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(promesa.exec.scheduled_executor.cljs$lang$applyTo = (function (seq41732){
+(promesa.exec.scheduled_executor.cljs$lang$applyTo = (function (seq40244){
 var self__4852__auto__ = this;
-return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq41732));
+return self__4852__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq40244));
 }));
 
 

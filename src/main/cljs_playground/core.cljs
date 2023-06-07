@@ -4,7 +4,7 @@
  ;; [cljs-http.client :as http]
  ;; [cljs-http.client :as http]
  ;; [datascript.core :as d]
-
+            [reagent.dom :as rdom]
             [promesa.core :as p]
             [oops.core :refer [oget oset! ocall oapply ocall! oapply!
                                oget+ oset!+ ocall+ oapply+ ocall!+ oapply!+]]))
@@ -16,17 +16,21 @@
     "I have " [:strong "bold"]
     [:span {:style {:color "red"}} " and red "] "text."]])
 
+(defn render-simple []
+  (rdom/render
+   [simple-component]
+   (.-body js/document)))
+
 (def pxMult 12)
 
 (defn calendar-bar [lenght]
   (do
-    
-  (def width (* lenght pxMult))
-  (str "
-      <div class=\"bar\" style=\"width:" width "px;\" >" 
-  " "
-  "</div>")))
 
+    (def width (* lenght pxMult))
+    (str "
+      <div class=\"bar\" style=\"width:" width "px;\" >"
+         " "
+         "</div>")))
 
 (defn  calendar-style []
   (str "<style>
@@ -47,8 +51,7 @@
                 ; (js/console.log (simple-component))
                 (def block-uuid (oget result "uuid"))
                 (def content (str "<body><div>" (calendar-bar 2) (calendar-bar 3) (calendar-style) "</div></body>"))
-                (-> (js/logseq.Editor.updateBlock block-uuid content))
-             ))))
+                (-> (js/logseq.Editor.updateBlock block-uuid content))))))
 
 (defn slashcommands []
   (def regSlashCmd js/logseq.Editor.registerSlashCommand)
