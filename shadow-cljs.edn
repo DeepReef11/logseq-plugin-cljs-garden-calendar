@@ -4,9 +4,12 @@
 
  :dependencies
  [
-  [refactor-nrepl "3.6.0"]
+  [org.clojure/clojure "1.9.0"]
+;  [refactor-nrepl "3.6.0"]
+  [nrepl "0.6.0"]
   [cider/cider-nrepl "0.30.0"]
-  [com.github.liquidz/iced-nrepl "1.2.480"]
+;;  [com.github.liquidz/iced-nrepl "1.2.480"]
+  [cider/piggieback "0.5.1"]
   [funcool/promesa "11.0.671"]
   [datascript "1.3.5"]
   [cljs-http/cljs-http  "0.1.46"]
